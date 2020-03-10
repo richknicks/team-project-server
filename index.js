@@ -1,7 +1,7 @@
 const express = require('express');
 const server = express();
 server.use(express.json());
-const PORT = 5432;
+const PORT = 5002;
 
 let books =[{
     id:1,
@@ -23,4 +23,4 @@ server.get('/api/books', (req,res)=>{
     res.status(200).json(books)
 })
 
-server.listen(PORT, () => console.log(`\n ** API on http://localhost:${PORT} **\n)`));
+server.listen(PORT, () => console.log(`\n ** API on http://localhost:${PORT} **\n`));
